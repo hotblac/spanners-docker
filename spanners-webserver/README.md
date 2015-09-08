@@ -1,3 +1,3 @@
-Webserver container for the Spanners demo app at http://www.disasterarea.co.uk/blog/
+Webserver container for the Spanners demo app at www.disasterarea.co.uk/blog/
 
-This container is a Tomcat 7 with version 3.0 of the Spanners-MVC demo application already installed.
+This container is a Tomcat 7 with version 3.1 of the Spanners-MVC demo application already installed.
