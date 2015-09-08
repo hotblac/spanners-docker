@@ -12,5 +12,5 @@ ADD tomcat/tomcat-users.xml $CATALINA_HOME/conf/
 ADD tomcat/mysql-connector-java-5.1.36-bin.jar $CATALINA_HOME/lib/
 
 # Install spanners-mvc war from Maven repo
-RUN wget http://www.disasterarea.co.uk/maven/org/dontpanic/spanners-mvc/3.2/spanners-mvc-3.2.war -P /usr/local/tomcat/webapps
+RUN wget http://www.disasterarea.co.uk/maven/org/dontpanic/spanners-mvc/3.2/spanners-mvc-3.2.war -O /usr/local/tomcat/webapps/spanners-mvc.war
 
