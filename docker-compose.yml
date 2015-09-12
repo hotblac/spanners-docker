@@ -1,0 +1,10 @@
+database:
+  environment:
+    MYSQL_ROOT_PASSWORD: my-secret-pw
+  image: hotblac/spanners-database:3.2
+webserver:
+  links:
+    - database:spanners-database 
+  ports:
+    - "8080:8080" 
+  image: hotblac/spanners-webserver:3.2
