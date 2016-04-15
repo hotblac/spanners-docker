@@ -1,0 +1,13 @@
+{
+  "name": "spanners-notifier",
+  "version": "3.5.0-SNAPSHOT",
+  "description": "Websocket push notifications for spanners web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "4.13.4",
+    "ws": "1.0.1"
+  }
+}
