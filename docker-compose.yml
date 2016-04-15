@@ -10,7 +10,13 @@ database:
 webserver:
   links:
     - database:spanners-database 
+    - nodejs:spanners-notifier
   ports:
     - "8080:8080" 
   image: hotblac/spanners-webserver:3.4
+  restart: always
+nodejs:
+  ports:
+    - "9090:9090"
+  image: hotblac/spanners-nodejs:latest
   restart: always
