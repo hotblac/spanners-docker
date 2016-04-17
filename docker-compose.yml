@@ -5,7 +5,7 @@ database:
   # handy to inspect the database from the host machine.
   ports:
     - "3306:3306" 
-  image: hotblac/spanners-database:3.4
+  image: hotblac/spanners-database:3.5
   restart: always
 webserver:
   links:
@@ -13,7 +13,7 @@ webserver:
     - nodejs:spanners-notifier
   ports:
     - "8080:8080" 
-  image: hotblac/spanners-webserver:3.4
+  image: hotblac/spanners-webserver:3.5
   restart: always
 nodejs:
   ports:
